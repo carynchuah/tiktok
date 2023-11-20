@@ -1,0 +1,32 @@
+{
+    "name": "sellstream/tiktok",
+    "description": "Tiktok integration for Sellstream",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Tharavink Prasad Sivarajan",
+            "email": "tharavink619@gmail.com"
+        }
+    ],
+    "type": "laravel-library",
+    "autoload": {
+        "psr-4": {
+            "Sellstream\\Tiktok\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Sellstream\\Tiktok\\TiktokServiceProvider"
+            ]
+        }
+    },
+    "require": {
+        "composer/installers": "~1.0"
+    },
+    "config": {
+        "allow-plugins": {
+            "composer/installers": true
+        }
+    }
+}
